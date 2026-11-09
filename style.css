@@ -1,11 +1,10 @@
-/* ---------- Base ---------- */
-
 :root {
-    --background: #ffffff;
-    --text: #171717;
-    --muted: #6b6b6b;
-    --border: #e8e8e8;
-    --accent: #222222;
+    --background: #0d0d0d;
+    --surface: #151515;
+    --text: #f2f2f2;
+    --muted: #a0a0a0;
+    --border: #2a2a2a;
+    --accent: #ffffff;
     --max-width: 1000px;
 }
 
@@ -31,14 +30,12 @@ a {
     text-decoration: none;
 }
 
-
-/* ---------- Header ---------- */
+/* Header */
 
 .header {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 28px 24px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,8 +62,7 @@ nav a:hover {
     color: var(--text);
 }
 
-
-/* ---------- Layout ---------- */
+/* Layout */
 
 main {
     max-width: var(--max-width);
@@ -87,8 +83,7 @@ main {
     margin-bottom: 16px;
 }
 
-
-/* ---------- Hero ---------- */
+/* Hero */
 
 .hero {
     min-height: 72vh;
@@ -108,7 +103,7 @@ main {
 }
 
 .hero h1 span {
-    color: #888;
+    color: var(--muted);
 }
 
 .intro {
@@ -122,14 +117,16 @@ main {
     display: flex;
     align-items: center;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .button {
     background: var(--accent);
-    color: white;
+    color: #0d0d0d;
     padding: 13px 20px;
     border-radius: 6px;
     font-size: 0.95rem;
+    font-weight: 600;
 }
 
 .text-link {
@@ -137,8 +134,7 @@ main {
     color: var(--muted);
 }
 
-
-/* ---------- Typography ---------- */
+/* Typography */
 
 h2 {
     font-size: clamp(2rem, 4vw, 3rem);
@@ -156,8 +152,7 @@ p {
     margin-top: 0;
 }
 
-
-/* ---------- Experience ---------- */
+/* Experience */
 
 .experience {
     border-top: 1px solid var(--border);
@@ -192,8 +187,7 @@ p {
     margin-bottom: 0;
 }
 
-
-/* ---------- Skills ---------- */
+/* Skills */
 
 .skills-grid {
     display: grid;
@@ -209,8 +203,7 @@ p {
     color: var(--muted);
 }
 
-
-/* ---------- Education ---------- */
+/* Education */
 
 .education {
     display: grid;
@@ -227,8 +220,7 @@ p {
     color: var(--muted);
 }
 
-
-/* ---------- Contact ---------- */
+/* Contact */
 
 .contact {
     padding: 100px 0;
@@ -245,35 +237,37 @@ p {
     max-width: 550px;
 }
 
-.email {
+.contact-links {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 28px;
+}
+
+.email,
+.linkedin {
     display: inline-block;
-    margin-top: 20px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
     border-bottom: 1px solid var(--text);
 }
 
-
-/* ---------- Footer ---------- */
+/* Footer */
 
 footer {
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 30px 24px;
-
     border-top: 1px solid var(--border);
     display: flex;
     justify-content: space-between;
-
     color: var(--muted);
     font-size: 0.85rem;
 }
 
-
-/* ---------- Mobile ---------- */
+/* Mobile */
 
 @media (max-width: 650px) {
-
     nav {
         display: none;
     }
